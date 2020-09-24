@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 200px;
+	width: 400px;
+}
+
+#mainPopup {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	background-color: whitesmoke;
+	padding: 10px;
+	height: 200px;
+	width: 400px;
+	font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	transition: all .2s ease-in-out;
+}
+
+.ninja {
+	margin: 0 auto 25px auto;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+.ninja:hover {
+	transform: scale(1.4);
+}
+
+.info {
+	font-size: 2em;
+	margin: 0 auto;
+}
+
+.img-ninja-mode {
+	fill: whitesmoke;
+}
+
+.ninja-mode {
+	color: whitesmoke;
+	background-color: #424348 !important;
+}

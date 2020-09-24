@@ -1,0 +1,29 @@
+{
+	"name": "Ninja Incognito",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "Allow easier access to medium so you can read all the articles you want",
+	"homepage_url": "http://extensionizr.com",
+	"icons": {
+		"16": "icons/ninja.png",
+		"48": "icons/ninja.png",
+		"128": "icons/ninja.png"
+	},
+	"default_locale": "en",
+	"background": {
+		"scripts": [ "src/bg/background.js" ],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_icon": "icons/ninja.png",
+		"default_title": "browser action demo",
+		"default_popup": "src/browser_action/browser_action.html"
+	},
+	"permissions": [ "cookies", "notifications", "tabs" ],
+	"content_scripts": [
+		{
+			"matches": [ "https://www.google.com/*" ],
+			"js": [ "src/inject/inject.js" ]
+		}
+	]
+}
