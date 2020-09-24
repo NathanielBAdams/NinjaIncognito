@@ -1,48 +1,56 @@
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	height: 200px;
-	width: 400px;
+  height: 200px;
+  width: 400px;
 }
 
 #mainPopup {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-	background-color: whitesmoke;
-	padding: 10px;
-	height: 200px;
-	width: 400px;
-	font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  /* background-color: whitesmoke; */
+  padding: 10px;
+  height: 200px;
+  width: 400px;
+  font-family: Helvetica, Ubuntu, Arial, sans-serif;
+  transition: all .2s ease-in-out;
+  /* messing with gradients below */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(128, 127, 145, 1) 52%, rgba(245, 245, 245, 1) 100%);
 }
 
 .ninja {
-	margin: 0 auto 25px auto;
-	width: 100px;
-	height: 100px;
-	cursor: pointer;
-	transition: all .3s ease-in-out;
+  margin: 0 auto 25px auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
 .ninja:hover {
-	transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 .info {
-	font-size: 2em;
-	margin: 0 auto;
+  font-size: 2em;
+  margin: 0 auto;
 }
 
 .img-ninja-mode {
-	fill: whitesmoke;
+  fill: whitesmoke;
 }
 
 .ninja-mode {
-	color: whitesmoke;
-	background-color: #424348 !important;
+  color: whitesmoke;
+  /* background: #424348 !important; */
+
+  /* messing with gradients below */
+  background: #424348 !important;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(66, 67, 72, 1) 50%, rgba(245, 245, 245, 1) 100%)
+    important!;
 }
